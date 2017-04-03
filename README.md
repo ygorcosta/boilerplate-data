@@ -1,6 +1,6 @@
-# WeDeploy Data / JavaScript Boilerplate
+# WeDeploy Data / ReactNative Boilerplate
 
-This template will help you through the process of deploying a WeDeploy Data container.
+This template will help you to develop an application for iOS and Android in ReactNative
 
 > [Visit the documentation to learn how to start saving and fetching data in realtime.](http://wedeploy.com/docs/data/)
 
