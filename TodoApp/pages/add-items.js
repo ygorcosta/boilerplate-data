@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {
-  Button,
   AppRegistry,
   Navigator,
   StyleSheet,
@@ -8,6 +7,7 @@ import {
   TextInput,
   View
 } from 'react-native';
+import Button from 'react-native-button';
 import WeDeploy from 'wedeploy';
 
 import DataHelper from '../helpers/data';
@@ -40,14 +40,13 @@ class AddItems extends Component {
           style={styles.input}
           value={this.state.itemName}
         />
-        <View style={styles.buttonContainer}>
-          <Button
-            accessibilityLabel="Add a To-do item"
-            color="white"
-            onPress={this.addItem_.bind(this)}
-            title="Add Item"
-          />
-        </View>
+        <Button
+          containerStyle={styles.buttonContainer}
+          onPress={this.addItem_.bind(this)}
+          style={styles.button}
+        >
+          Add Item
+        </Button>
          <Text
           onPress={this.navigateToListItems_.bind(this)}
           style={styles.link}
