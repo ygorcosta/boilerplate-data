@@ -10,7 +10,7 @@
     "react": "~15.4.1",
     "react-native": "0.42.3",
     "react-native-button": "^1.8.2",
-    "wedeploy": "^1.7.2"
+    "wedeploy": "^2.1.4"
   },
   "devDependencies": {
     "babel-jest": "19.0.0",
