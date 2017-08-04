@@ -29,8 +29,8 @@ class AddToDoViewController: UIViewController {
 	@IBAction func addToDoClick() {
 		guard let todo = toDoTextField.text,
 			!todo.isEmpty else { return }
-		
-		WeDeploy.data("https://data-boilerplatedata.wedeploy.sh")
+
+		WeDeploy.data("https://data-boilerplatedata.wedeploy.io")
 			.create(resource: "tasks", object: ["name" : todo])
 			.toCallback { objectCreated, error in
 				if let objectCreated = objectCreated {

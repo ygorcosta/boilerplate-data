@@ -31,8 +31,8 @@ class ToDoListViewController: UIViewController, UITableViewDataSource {
 		tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
 		tableView.tableFooterView = UIView()
 		tableView.separatorColor = .mainColor
-		
-		WeDeploy.data("https://data-boilerplatedata.wedeploy.sh")
+
+		WeDeploy.data("https://data-boilerplatedata.wedeploy.io")
 			.orderBy(field: "id", order: .DESC)
 			.limit(5)
 			.get(resourcePath: "tasks")
@@ -45,8 +45,8 @@ class ToDoListViewController: UIViewController, UITableViewDataSource {
 					print("Error: \(error!)")
 				}
 			}
-		
-		socket = WeDeploy.data("https://data-boilerplatedata.wedeploy.sh")
+
+		socket = WeDeploy.data("https://data-boilerplatedata.wedeploy.io")
 			.orderBy(field: "id", order: .DESC)
 			.limit(5)
 			.watch(resourcePath: "tasks")
