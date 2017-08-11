@@ -1,5 +1,5 @@
 const DataHelper = {
-  url: 'data.boilerplate-data.wedeploy.io'
+  url: 'db-boilerplatedata.wedeploy.io'
 };
 
 export default DataHelper;

@@ -1,6 +1,6 @@
 {
   "name": "TodoApp",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -10,7 +10,7 @@
     "react": "~15.4.1",
     "react-native": "0.42.3",
     "react-native-button": "^1.8.2",
-    "wedeploy": "^2.1.4"
+    "wedeploy": "^3.0.2"
   },
   "devDependencies": {
     "babel-jest": "19.0.0",
