@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
-  Navigator,
   StyleSheet,
   Text,
   TextInput,
@@ -65,8 +64,6 @@ class AddItems extends Component {
       this.setState({
         itemName: ''
       });
-
-      console.info('Saved', response);
     })
     .catch((error) => {
       console.error(error);
@@ -74,7 +71,7 @@ class AddItems extends Component {
   }
 
   navigateToListItems_() {
-    this.props.navigator.push({id: 'ListItems',});
+    this.props.navigation.navigate('ListItems');
   }
 }
 

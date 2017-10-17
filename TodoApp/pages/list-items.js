@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {
   Button,
   AppRegistry,
-  Navigator,
   StyleSheet,
   Text,
   TextInput,
@@ -12,6 +11,7 @@ import WeDeploy from 'wedeploy';
 
 import DataHelper from '../helpers/data';
 import styles from '../styles/main';
+
 
 class ListItems extends Component {
   constructor() {
@@ -38,7 +38,7 @@ class ListItems extends Component {
     data
       .limit(5)
       .orderBy('id', 'desc')
-      .watch('tasks')
+      .watch('tasks', {transports: ['websocket'], jsonp: false, forceNew: true})
       .on('changes', (tasks) => {
         this.setState({
           items: tasks
@@ -66,7 +66,7 @@ class ListItems extends Component {
   }
 
   navigateToAddItems_() {
-    this.props.navigator.push({id: 'AddItems',});
+    this.props.navigation.navigate('AddItems');
   }
 
   renderItems_() {
