@@ -1,6 +1,6 @@
 {
-  "name": "TodoApp2",
-  "version": "0.1.0",
+  "name": "TodoApp",
+  "version": "1.1.0",
   "private": true,
   "devDependencies": {
     "react-native-scripts": "1.6.0",
