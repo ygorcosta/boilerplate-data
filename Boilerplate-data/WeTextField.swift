@@ -109,7 +109,7 @@ class BorderLessTextField: UITextField {
 		}
 	}
 
-	func showOrHidePassword() {
+	@objc dynamic func showOrHidePassword() {
 		isSecureTextEntry = !isSecureTextEntry
 
 		showPasswordButton.setTitle(isSecureTextEntry ? .showPassword : .hidePassword, for: .normal)

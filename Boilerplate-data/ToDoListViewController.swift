@@ -32,7 +32,7 @@ class ToDoListViewController: UIViewController, UITableViewDataSource {
 		tableView.tableFooterView = UIView()
 		tableView.separatorColor = .mainColor
 		
-		WeDeploy.data("https://data-boilerplatedata.wedeploy.sh")
+		WeDeploy.data("https://db-boilerplatedata.wedeploy.io")
 			.orderBy(field: "id", order: .DESC)
 			.limit(5)
 			.get(resourcePath: "tasks")
@@ -46,16 +46,17 @@ class ToDoListViewController: UIViewController, UITableViewDataSource {
 				}
 			}
 		
-		socket = WeDeploy.data("https://data-boilerplatedata.wedeploy.sh")
+		socket = WeDeploy.data("https://db-boilerplatedata.wedeploy.io")
 			.orderBy(field: "id", order: .DESC)
 			.limit(5)
 			.watch(resourcePath: "tasks")
-		
+
 		socket?.on(.changes) { [unowned self] event in
 			let changes = event.document["changes"] as! [[String: Any]]
 			self.todos = changes.map({ $0["name"] as! String })
 			self.tableView.reloadData()
 		}
+
     }
 
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

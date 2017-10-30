@@ -30,7 +30,7 @@ class AddToDoViewController: UIViewController {
 		guard let todo = toDoTextField.text,
 			!todo.isEmpty else { return }
 		
-		WeDeploy.data("https://data-boilerplatedata.wedeploy.sh")
+		WeDeploy.data("https://db-boilerplatedata.wedeploy.io")
 			.create(resource: "tasks", object: ["name" : todo])
 			.toCallback { objectCreated, error in
 				if let objectCreated = objectCreated {
@@ -43,7 +43,7 @@ class AddToDoViewController: UIViewController {
 			}
 	}
 	
-	func handleScreenTap() {
+	@objc dynamic func handleScreenTap() {
 		view.endEditing(true)
 	}
 

@@ -1,40 +1,34 @@
 PODS:
-  - PromiseKit (4.1.7):
-    - PromiseKit/Foundation (= 4.1.7)
-    - PromiseKit/QuartzCore (= 4.1.7)
-    - PromiseKit/UIKit (= 4.1.7)
-  - PromiseKit/CorePromise (4.1.7)
-  - PromiseKit/Foundation (4.1.7):
+  - PromiseKit (4.4.3):
+    - PromiseKit/Foundation (= 4.4.3)
+    - PromiseKit/QuartzCore (= 4.4.3)
+    - PromiseKit/UIKit (= 4.4.3)
+  - PromiseKit/CorePromise (4.4.3)
+  - PromiseKit/Foundation (4.4.3):
     - PromiseKit/CorePromise
-  - PromiseKit/QuartzCore (4.1.7):
+  - PromiseKit/QuartzCore (4.4.3):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (4.1.7):
+  - PromiseKit/UIKit (4.4.3):
     - PromiseKit/CorePromise
-  - RxSwift (3.3.1)
-  - Socket.IO-Client-Swift (8.3.0)
-  - WeDeploy (0.3.0):
+  - RxSwift (4.0.0)
+  - Socket.IO-Client-Swift (12.1.2):
+    - Starscream (~> 2.1.1)
+  - Starscream (2.1.1)
+  - WeDeploy (1.0.1):
     - PromiseKit (~> 4.0)
-    - RxSwift (~> 3.0)
-    - Socket.IO-Client-Swift (~> 8.1)
+    - RxSwift (= 4.0.0)
+    - Socket.IO-Client-Swift (~> 12.1)
 
 DEPENDENCIES:
-  - WeDeploy (from `https://github.com/victorg1991/api-swift`)
-
-EXTERNAL SOURCES:
-  WeDeploy:
-    :git: https://github.com/victorg1991/api-swift
-
-CHECKOUT OPTIONS:
-  WeDeploy:
-    :commit: e955a892e4ae4c6d69200ed05368b020ffbd7b7a
-    :git: https://github.com/victorg1991/api-swift
+  - WeDeploy
 
 SPEC CHECKSUMS:
-  PromiseKit: 779f2e41faf62d854e7593026ddbcb0bb5c5002d
-  RxSwift: 8fc9f2de6275a9101d518444e00bf32f1a42caac
-  Socket.IO-Client-Swift: 7ad3aded3c0f74d99555e950ac3aa82ca3eefbaf
-  WeDeploy: 43c7ad1c9cba1b83e0c1f46ea3eb65017b4bd4c8
+  PromiseKit: fbb52a0d154402c57eeb6eccd36dd7724fcf6117
+  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  Socket.IO-Client-Swift: ba3cb1c4bf0a6ca90080406a2c22685c25ad1f60
+  Starscream: 142bd8ef24592d985daee9fa48c936070b85b15f
+  WeDeploy: 023e4a9ddf965f22c4fe3ab63a726befdd1b7057
 
-PODFILE CHECKSUM: 1185923f8e375e26b54471a98366e85cf8e2620f
+PODFILE CHECKSUM: e01360d1b403152f48ec170d60dbcdfdcc35ae70
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.3.1
